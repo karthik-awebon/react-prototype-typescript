@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import TopNav from './components/TopNav/TopNav';
+import MainWindow from './components/MainWindow/MainWindow';
+import BottomNav from './components/BottomNav/BottomNav';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <TopNav data-test="app__topnav" />
+      <MainWindow data-test="app__mainwindow" />
+      <BottomNav data-test="app__bottomnav" />
+    </>
   );
-}
+};
 
 export default App;

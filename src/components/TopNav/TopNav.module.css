@@ -1,0 +1,11 @@
+.TopNav {
+  --mdc-layout-grid-margin-desktop: 8px;
+  --mdc-layout-grid-gutter-desktop: 8px;
+  border: 1px solid red;
+  margin: 0px !important;
+}
+
+.SearchWrapper,
+.HelpWrapper {
+  text-align: right;
+}
